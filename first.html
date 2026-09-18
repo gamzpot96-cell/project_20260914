@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title Seoul</title> 
+    <link rel="icon" href="/images/faaaabicon.ico">
+    <style>
+        .flex-container { 
+            display:flex; 
+            color:blue 
+        }
+h1 {
+    color: #111827;
+    font-size: 3rem;
+}
+h2 {
+    color: #243fa0;
+    font-size: 2rem;
+}
+ul { 
+    color: #24b001;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+p {color: #df3886; }
+.metric { padding: 1rem; }
+#result { min-height: 8rem; }
+button:hover { background: #1d4ed8; }
+input:focus { outline: 3px solid #93c5fd;}
+:root { --ink: #111827; --muted: #6b7280; --brand: #2563eb; }
+body { color: var(--ink); font-size: 16px; line-height: 1.7; }
+* { box-sizing: border-box; }
+.metric { padding: 1.25rem; border: 1px solid #e5e7eb; margin-bottom: 1rem; }
+.metric {
+    border-radius: 16px;
+    background: linear-gradient(135deg, #eff6ff, #ffffff)
+    box-shadow: 0 8px 24px rgb(15 23 42 / 8%);
+}
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: .75rem; border-bottom: 1px solid #e5e7eb; text-align; left; }
+input, select, button { min-height: 44px; padding: .65rem .8rem}
+.filters { display: flex; gap: .75rem; align-items: end; flex-wrap: wrap; }
+.metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.table-wrap { overflow-x: auto; }
+.badge { position: absolute; top: 1rem; right: 1rem; }
+@media (max-width: 720px) {
+    .metrics { grid-template-columns: 1fr; }
+    .article-header h1 { font-size: 2rem; }
+}
+
+    </style>
+
+    
+</head>
+
+<body>
+    <header class="site-header"></header><a href="/">
+        
+        <h1>서울 인구 데이터 뉴스</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bdE_SyHad90?si=Dj_PHfj5PgTN7uSZ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </a></header>
+    <body>
+        
+    <article>
+        <h1 style="color: coral;">청년 인구, 5년 새 8.2%감소</h1>
+        <p><strong>서울 청년 인구</strong>가 지속적으로 감소했습니다.</p>
+        <p><em>자료: 국가통계포털</em></p>
+        <h2>핵심 발견</h2>
+    </article>
+    <ul>
+        <li>20대 인구 감소 폭이 가장 큽니다.</li>
+        <li>외곽 지역의 감소율이 높습니다.</li>
+    </ul>
+    <a href="https:/kosis.kr"><strong>원자료 확인</strong></a>
+    <table>
+        <caption>2024~2026년 서울 청년 인구</caption>
+        <thead>
+            <tr>
+                <th scope="col">연도</th>
+                <th scope="col">인구</th>
+                <th scope="col">증감률</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">2024</th>
+                <td>2,410,000명</td>
+                <td>-2.1%</td>
+            </tr>
+            <tr>
+                <th scope="row">2025</th>
+                <td>2,350,000명</td>
+                <td>-2.5%</td>
+            </tr>
+            <tr>
+                <th scope="row">2026</th>
+                <td>2,290,000명</td>
+                <td>-2.6%</td>
+            </tr>
+        </tbody>
+    </table>
+    <figure>
+        <img src="/images/population-chart.png" alt="2024년부터 2026년까지 서울 청년 인구가 감소하는 선그래프">
+        <figcaption>서울 청년 인구 추이. 자료: 국가통계포털</figcaption>
+    </figure>
+    <form id="filter-form">
+        <label for="keyword"></label>
+        <input id="keyword" name="keyword" type="search" <label for="region">지역</label>
+        <select id="region" name="region">
+            <option value="all">전체</option>
+            <option value="seoul">서울</option>
+        </select>
+        <button type="submit">적용</button>
+    </form>
+    <section class="metrics" aria-label="핵심 지표">
+        <article class="metric">
+            <h2>청년 인구</h2>
+            <strong>229만 명</strong>
+            <p>전년 대비 2.6% 감소</p>
+        </article>
+    </section>
+    <section aria-labelledby="chart-title">
+        <h2 id="chart-title">연도별 변화</h2>
+        <div id="chart" role="img" aria-label="연도별 청년 인구 차트"></div>
+    </section>
+</body>
+
+
+
+</html>

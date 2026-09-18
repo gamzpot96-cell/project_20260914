@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fgu</title>
+    <script src="/first.js"></script>
+</head>
+
+<body>
+    <script>
+        fgugugu();
+        fgugugu2(99)
+        let retValue = fgugugu2(99);
+        console.log("fgugugu2() :"+ retValue);
+        let retV2 = "aaa,bbb,ccccc".substring(3,5)
+        console.log(retV2);
+
+
+        // // 전역변수로 쓸 변수를 let 선언
+        // let 같은 이름으로 중복선언 불가
+        // let a1 = 1;
+        // let a2 = 2;
+        // let a4;
+
+        f1()
+        f2();
+
+        let f3 = function(){
+
+        }
+        function f4() {
+
+        }
+
+        function f1() {
+            a4 = 4;
+            console.log("===1")
+            let f2 = function () {
+                a4 = 4;
+                console.log("===2")
+            };
+            f2();
+            console.log("===3")
+        }
+    </script>
+</body>
+</html>

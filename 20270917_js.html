@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dadadarada</title>
+</head>
+<body>
+
+    <!-- 3 * (5 + 7) * 2
+     5%2
+     -->
+    <script>    
+        v3 = "123"
+        console.log(v3 + 5)
+        console.log(v3 + "5")
+        console.log(v3 * 5)
+        console.log(Number(v3) + 7)
+        console.log(parseFloat("2.75"))
+        v4 = 53
+        console.log(v4 + 5)
+        console.log(v4 + "5")
+        console.log(v4 * 5)
+        console.log(String(v4) + 9)
+        console.log(5%3) // 2
+        console.log(5/3) // 1
+        // console.log(5++)
+        // console.log(++5)
+        // console.log(+5)
+        // console.log(-5)
+
+        if ( v4 > 100 ) {
+            console.log("100보다 커요")
+        } else {
+            console.log("100보다 크지 않아요")
+        }
+        if ( v4 > 100) {
+            console.log("100보다 커요")
+        } else if ( v4 < 50 ) {
+            console.log("50보다 작아요")
+        } else {
+            console.log("50보다 같거나 크고, 100보다 같거나 작아요")
+        }
+
+        // 반복문
+        arr1 = "apple"
+        arr2 = "banana"
+        arr3 = "orange"
+        console.log(arr1);
+        console.log(arr2);
+        console.log(arr3);
+
+        arr = ["apple", "banana", "orange"]
+        console.log(arr[0]);
+        console.log(arr[1]);
+        console.log(arr[2]);
+
+        for (i=0; i<arr.length; i++){
+            console.log(arr[i]);
+        }
+
+
+
+
+        // 문자열 함수들
+        str_length = "abc,def"
+        console.log(str_length.length);
+        console.log(str_length.split(","));
+        // str_length.substring(2,4) 결과물
+        console.log(str_length.substring(2,4));
+        console.log(str_length.split("," , 1))
+        console.log(str_length.substring(2));
+        // 숫자 Math 함수(메소드)들
+        console.log( Math.max(2,6,3,9,4) )
+        console.log( Math.min(2,6,3,9,4) )
+        console.log( Math.abs(-0.34) )
+        console.log( Math.random(17) )
+        console.log( Math.round(5.79) )
+        console.log( Math.floor(3.141592) )
+        console.log( Math.ceil(6.28) )
+        // 메소드 - 파라메터를 넣을 수 있다. 자료형
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentttttd</title>
+    <style>
+        p{color: aqua}
+    </style>
+</head>
+<body>
+    C, Java, C#, C++, Python, Javascript
+    <script>
+    v1 = 10;
+    var v2 = 10 // 같은 이름으로 선언, 값 변경 가능
+    let v3 = 10 // 같은 이름으로 재선언 안됨
+    const v4 = 10 // 값 변경 불가능한 상수
+    v2 = "aa"
+    v3 = "abc"
+    // v4 = "ljw" // 값 변경 불가능한 상수
+    var v5;
+    let v6;
+    // const v7; // 값 없이 선언 불가능 - 상수
+    console.log(v5); // undefined
+    console.log(v6); // undefined
+
+    {
+        console.log(v2)
+        var v2 = 20
+        {
+            console.log(v2)
+            var v2 = "bbb"
+            console.log(v2)
+        }
+        console.log(v2)
+    }
+    console.log(v2)
+
+
+    </script>
+</body>
+</html>

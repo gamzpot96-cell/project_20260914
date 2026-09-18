@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ckbnn</title>
+    <script>
+
+    </script>
+</head>
+<body>
+    <h1 id="id2">연산자</h1>
+    <h1 class="c2">제어문</h1>
+    <script>
+        var a1 = false;  // 15
+        var a2 = 0;      // "15"
+        console.log((a1==a2)? "==같다":  "==다르다");
+        console.log((a1===a2)? "===같다":  "===다르다");
+
+        var arr = ["chicken","banana"];
+        for(var i=0; i<arr.length; i++){
+            console.log(arr[i]);
+        }
+        for(var i in arr){
+            console.log(arr[i]);
+        }
+        
+        var obj = {k1 : "seoul"
+                   , k2 : "daejeon"
+                   , key : "incheon"
+                   , k3 : 100
+                   , k4 : ["chicken","banana"]
+                };
+    console.log(obj);
+    console.log(obj.key);
+    console.log(obj["key"]);
+
+    var v1 = "k1";
+    console.log(v1);
+    console.log(obj[v1]);
+
+    console.log(obj["k1"]);
+
+    console.log(obj.k1);
+
+    // 속성명을 알 때, 하나만 꺼내서 보고싶을 때 : object. 사용할 때
+    // 속성명을 모를 때 사용 - enhanced for - 속성명을 알아와서 v1변수에 넣고 - object[변수명]
+    // 속성들 다 꺼내고 싶을 때 - enhanced for, 다 보고 싶을 때 - 반복문을 사용하고 싶을 때 - objeft["속성명"]
+    for(var v1 in obj){
+        console.log(v1);
+        console.log(typeof(v1));
+        // var v1 = "k1";
+        // var v1 = "k2";
+        console.log(obj[v1]);
+        console.log(obj.key);
+        // console.log(obj["k1"]);
+    }
+
+    for(var key in obj){
+        console.log(key);
+        console.log(typeof(key));
+        // var key = "k1";
+        // var key = "k2";
+        console.log(obj[key]);
+        console.log(obj.key);
+        // console.log(obj["k1"]);
+    }
+
+    ///////// 내일
+    var arr = ["chicken","banana", function(){console.log("배열의2번index에함수입니다.");}];
+    for(var i in arr){
+        if(typeof( arr[i]) == "function") {
+            arr[i]();
+        } else {
+            console.log(arr[i]);
+        }
+    }
+
+    arr[10] = "10번 방에 값 넣기";
+    for(var i in arr){
+        console.log(i);
+        console.log(arr[i]);
+    }
+    for(var i=0; i<arr.length+3; i++){
+        console.log(arr[i]);
+    }
+
+    var arr = new Array(2);  // 2개 방 즉 index 0,1
+    arr[0] = 100;
+    arr.push(103);  // 맨 뒤에 추가 // index 2
+    arr.push("chicken");
+    arr.push("2번 방에도 값 들어가나?");
+    arr[10] = "10번 방 []으로도 들어가나?";
+    for(var i in arr){
+        console.log(i +":"+arr[i]);
+    }
+    </script>
+</body>
+</html>
